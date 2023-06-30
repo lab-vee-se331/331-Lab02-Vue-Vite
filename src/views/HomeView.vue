@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // import TheWelcome from '../components/TheWelcome.vue'
 import EventCard from '@/components/EventCard.vue';
+import EventCategories from '@/components/EventCategories.vue';
 import type { EventItem } from '@/type';
 
 import { ref } from 'vue'
@@ -46,6 +47,8 @@ const events = ref<EventItem[]>([
   <main class="events">
     <!-- <TheWelcome /> -->
     <EventCard v-for="event in events" :key="event.id" :event="event"></EventCard>
+    <EventCategories v-for="event in events" :key="event.id" :event="event"></EventCategories>
+
   </main>
 </template>
 
