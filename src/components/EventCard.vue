@@ -10,7 +10,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-const event = ref({
+import { type EventItem } from '@/type';
+const event = ref<EventItem>({
     id: 5928101,
     category: 'animal welfare',
     title: 'Cat Adoption Day',
