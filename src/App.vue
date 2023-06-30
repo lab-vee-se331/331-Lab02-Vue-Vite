@@ -43,4 +43,8 @@ header {
   display: block;
   margin: 0 auto 2rem;
 }
+
+h4 {
+  font-size: 20px;
+}
 </style>
