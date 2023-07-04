@@ -8,3 +8,14 @@ export interface EventItem {
     time : string
     organizer : string
 }
+
+export interface StudentItem {
+    id : number
+    studentId : string
+    name : string
+    surname : string
+    gpa : number
+    image : string
+    penAmount : string
+    description : string
+}
